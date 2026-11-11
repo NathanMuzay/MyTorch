@@ -1,0 +1,32 @@
+name: Bug Report
+description: Signaler un bug ou un comportement inattendu
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Merci de signaler ce problème.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du bug
+      description: Que s'est-il passé ?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes pour reproduire
+      description: Commandes exactes exécutées.
+      placeholder: |
+        1. ./my_torch_analyzer --predict ...
+        2. Observer le comportement
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+      description: Ce qui aurait dû se produire (ex: code de sortie 84).
+    validations:
+      required: true

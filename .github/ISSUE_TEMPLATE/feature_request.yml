@@ -1,0 +1,22 @@
+name: Feature Request
+description: Proposer une nouvelle fonctionnalité pour MY_TORCH_
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Merci de proposer une nouvelle fonctionnalité pour notre projet MY_TORCH_ !
+  - type: textarea
+    id: description
+    attributes:
+      label: Description de la fonctionnalité
+      description: Expliquez clairement ce que cette fonctionnalité apporte.
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification / Cas d'usage
+      description: Pourquoi cette fonctionnalité est-elle pertinente (ex: optimisation, bonus) ?
+    validations:
+      required: false
